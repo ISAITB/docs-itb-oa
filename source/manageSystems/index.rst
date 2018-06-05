@@ -7,13 +7,17 @@ Before proceeding to test anything on the test bed you need to define one or mor
 that systems represent your organisation's software components for which you make conformance
 statements to test for (see :ref:`introduction__glossary__system`).
 
-Systems are configured by you or by your community administrator. The systems currently configured 
-for your organisation are presented to you once you click the **TESTS** button from the screen's header.
+Systems are configured by you or by your community administrator. To view your systems click the **TESTS** button from the screen's header.
+
+.. figure:: ../screenshots/header_nonadmin.PNG
+  :align: center
+
+The screen that follows displays your organisations currently defined systems.
 
 .. figure:: ../screenshots/systems_admin.PNG
   :align: center
 
-Your organisation's systems are presented in a table that displays for each system:
+Your systems are presented in a table that displays for each one:
 
 * Its **short name**, a brief name used to display in search results.
 * Its **full name**, the complete system name presented in reports and detail screens.
@@ -43,7 +47,7 @@ The information to enter in the presented form are:
 * A **version** number (required). Although required this is not currently used in the test bed apart from display purposes.
 
 Once you have entered the system's information click the **Save** button to record it. You can also click the **Cancel** button
-to close the popup without making any changes. 
+to close the popup without making any changes.
 
 .. _manage_your_systems__edit:
 
@@ -57,7 +61,7 @@ being displayed with the system's information, presented in editable input field
   :align: center
   :scale: 50%
 
-You can proceed to modify the **short name**, **full name**, **description** and **version** of the system and click on the 
+You can proceed to modify the **short name**, **full name**, **description** and **version** of the system and click on the
 **Save** button when finished. Here you may also click the **Delete** button which, following confirmation, will proceed to
 completely delete the system. In this case the tests realised for this system will still be searchable but will be presented
 as obsolete (see :ref:`view_your_test_history`). Finally, you can also click the **Cancel** button to close this popup without
