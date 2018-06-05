@@ -12,7 +12,7 @@ Systems are configured by you or by your community administrator. To view your s
 .. figure:: ../screenshots/header_nonadmin.PNG
   :align: center
 
-The screen that follows displays your organisations currently defined systems.
+The screen that follows displays your organisation's currently defined systems.
 
 .. figure:: ../screenshots/systems_admin.PNG
   :align: center
