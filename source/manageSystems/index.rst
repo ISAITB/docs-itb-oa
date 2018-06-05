@@ -7,10 +7,10 @@ Before proceeding to test anything on the test bed you need to define one or mor
 that systems represent your organisation's software components for which you make conformance
 statements to test for (see :ref:`introduction__glossary__system`).
 
-Systems are configured for you by an administrator. In case your organisation has multiple systems defined
-these are presented to you on the first screen once you click the **TESTS** button from the screen's header.
+Systems are configured by you or by your community administrator. The systems currently configured 
+for your organisation are presented to you once you click the **TESTS** button from the screen's header.
 
-.. figure:: ../screenshots/systems_nonadmin.PNG
+.. figure:: ../screenshots/systems_admin.PNG
   :align: center
 
 Your organisation's systems are presented in a table that displays for each system:
@@ -23,6 +23,42 @@ Your organisation's systems are presented in a table that displays for each syst
 To proceed with a specific system, either to view its past tests, conformance testing status or to execute new tests, click 
 the appropriate row from the table. Once clicked you will change to view the conformance statements for the selected system (see :ref:`manage_your_conformance_statements__view_your_conformance_statements`).
 
-.. note::
-    **Organisations with a single system:** If your organisation has only a single system defined, clicking on the **TESTS** button
-    from the screen's header takes you directly to the system's conformance statements (see :ref:`manage_your_conformance_statements__view_your_conformance_statements`).
+.. _manage_your_systems__create:
+
+Create a new system
+-------------------
+
+To create a new system click on the **Create system** button displayed in the top right side of the system list header.
+Doing so presents you with a popup form to input the new system's information.
+
+.. figure:: ../screenshots/systems_create.PNG
+  :align: center
+  :scale: 50%
+
+The information to enter in the presented form are:
+
+* The system's **short name** (required). This is used when the system is displayed in lists.
+* The system's **full name** (required). This is included in reports that mention the system.
+* An optional **description** to provide more information about the system.
+* A **version** number (required). Although required this is not currently used in the test bed apart from display purposes.
+
+Once you have entered the system's information click the **Save** button to record it. You can also click the **Cancel** button
+to close the popup without making any changes. 
+
+.. _manage_your_systems__edit:
+
+Edit an existing system
+-----------------------
+
+To edit an existing system click the pencil icon displayed on the right end of the system's row. Doing so results in a popup
+being displayed with the system's information, presented in editable input fields.
+
+.. figure:: ../screenshots/systems_update.PNG
+  :align: center
+  :scale: 50%
+
+You can proceed to modify the **short name**, **full name**, **description** and **version** of the system and click on the 
+**Save** button when finished. Here you may also click the **Delete** button which, following confirmation, will proceed to
+completely delete the system. In this case the tests realised for this system will still be searchable but will be presented
+as obsolete (see :ref:`view_your_test_history`). Finally, you can also click the **Cancel** button to close this popup without
+making any changes.

@@ -7,9 +7,8 @@ Conformance statements serve to define your organisation's testing goals by link
 systems with a specification's actor (see :ref:`introduction__glossary__conformance_statement`). It is a system's conformance statements that determine the test
 suites and test cases that will be presented to you to execute.
 
-Your organisation's conformance statements may either be configured by an administrator of your organisation
-or by the overall community administrator. From your perspective, conformance statements can be viewed but
-not modified, serving to organise and focus your testing activities for each specification.
+As administrator for your organisation you are responsible for configuring its conformance statements. Note however that
+conformance statements may also be managed for you by your community administrator.
 
 .. _manage_your_conformance_statements__view_your_conformance_statements:
 
@@ -17,11 +16,9 @@ View your conformance statements
 --------------------------------
 
 Conformance statements are made at the level of a system and as such, the first step is to select one of the systems 
-configured for your organisation (see :ref:`manage_your_systems`). Note that this step is optional in case your organisation defines only
-a single system in which case clicking on the **TESTS** button on the header directly takes you to its list of 
-conformance statements.
+configured for your organisation (see :ref:`manage_your_systems`).
 
-.. figure:: ../screenshots/conformance_statements_nonadmin.PNG
+.. figure:: ../screenshots/conformance_statements_admin.PNG
   :align: center
 
 This table presents for the selected system its list of conformance statements in terms
@@ -34,11 +31,37 @@ have failed or that have never been completed.
 From this table you can click any row to proceed to the conformance statement's details (see :ref:`manage_your_conformance_statements__view_a_conformance_statements_details`).
 You can return to the listing of conformance statements at any time by clicking the **Conformance Statement** entry in the left side menu.
 
-.. note::
-    **Systems with a single conformance statement:** If your selected system defines a single conformance statement
-    the current screen is skipped. You are instead presented directly with the conformance statement's details (see :ref:`manage_your_conformance_statements__view_a_conformance_statements_details`).
-    Note that in case your organisation has a single system and a single conformance statement clicking the **TESTS**
-    button from the screen header will directly bring you to the conformance statement's details.
+.. _manage_your_conformance_statements__create:
+
+Create a conformance statement
+------------------------------
+
+To create a new conformance statement for your selected system click the **Create conformance statement** button from the top right side of the
+conformance statement listing's header. This presents to you a three-step wizard to construct your conformance statement.
+
+The first step presented is to select the **domain** relevant to your conformance statement. Note that in most cases this will only be a single
+domain, the one relevant to your community.
+
+.. figure:: ../screenshots/conformance_statements_create_step1.PNG
+  :align: center
+  :scale: 50%
+
+To proceed select the domain you want by clicking its row and then the **Next** button from the bottom right corner. The next step presented
+is the list of **specifications** for the selected domain.
+
+.. figure:: ../screenshots/conformance_statements_create_step2.PNG
+  :align: center
+  :scale: 50%
+
+Select the specification you want by clicking its row and then clicking again the **Next** button. The final step presented is the list of **actors**
+defined for the specification.
+
+.. figure:: ../screenshots/conformance_statements_create_step3.PNG
+  :align: center
+  :scale: 50%
+
+To complete the creation of the conformance statement select the actor your system is expected to play by clicking its row and finish by clicking the **Finish** button. 
+You will then be returned to the listing of your system's conformance statements (see :ref:`manage_your_conformance_statements__view_your_conformance_statements`).
 
 .. _manage_your_conformance_statements__view_a_conformance_statements_details:
 
@@ -60,14 +83,15 @@ Overview
 
 The **Conformance Statement Details** section provides you the context of what your system is supposed to conform to.
 
-.. figure:: ../screenshots/conformance_statement_details_overview_nonadmin.PNG
+.. figure:: ../screenshots/conformance_statement_details_overview_admin.PNG
   :align: center
 
 The **domain** details are presented on the top as the high-level description of the project you are testing for. The 
 **specification** information follows to define the specification you have chosen for your system to conform to
 (a domain may have multiple specifications). The **actor** information defines the specific role your system is expected to fulfil
 as part of this specification (a specification may have multiple actors). At the top of this section you can also click the 
-**Download report** button to export your system's conformance statement report (see :ref:`manage_your_conformance_statements__view_a_conformance_statements_details__export`).
+**Download report** button to export your system's conformance statement report (see :ref:`manage_your_conformance_statements__view_a_conformance_statements_details__export`)
+or the **Delete statement** button to delete the conformance statement (see :ref:`manage_your_conformance_statements__view_a_conformance_statements_details__delete`).
 
 .. _manage_your_conformance_statements__view_a_conformance_statements_details__endpoints:
 
@@ -89,20 +113,26 @@ endpoint and for each endpoint parameter:
 * Its **type**, which can be "SIMPLE" (i.e. a simple text to enter) or "BINARY" (i.e. a file to upload).
 * Whether or not it already has a **configured** value. 
 
-Clicking on a row in this table opens a popup to display additional information on the endpoint parameter.
+Clicking on a row in this table opens a popup to display additional information on the endpoint parameter and allow you to edit its value.
 
-.. figure:: ../screenshots/conformance_statement_details_endpoint_details_nonadmin.PNG
+.. figure:: ../screenshots/conformance_statement_details_endpoint_details_admin_simple.PNG
   :align: center
   :scale: 50%
 
-The information presented additionally here is the parameter's **description** and its **value**.
+The information presented additionally here is the parameter's **description** and its **value**. In case this is a parameter of type "BINARY",
+the popup displays a file upload control rather than a text input.
+
+.. figure:: ../screenshots/conformance_statement_details_endpoint_details_admin_binary.PNG
+  :align: center
+  :scale: 50%
 
 Finally, note that the complete **Endpoints** section may be missing in case your system is not expected to provide any configuration parameters
 before executing its tests.
 
 .. note::
-    **Editing endpoint parameters:** Endpoint parameters apply for the specific system across all its conformance statements. As such, 
-    editing its configuration (i.e. its endpoint parameters) is reserved to your administrator.
+    **Editing endpoint parameters:** Endpoint parameters apply for the specific system across all its conformance statements. 
+    Editing its configuration (i.e. its endpoint parameters) is a prerequisite that you, as organisation administrator, has to complete
+    as your basic users lack the privileges to do so.
 
 .. _manage_your_conformance_statements__view_a_conformance_statements_details__tests:
 
@@ -159,7 +189,7 @@ Export conformance statement report
 The conformance statement report (in PDF format) provides the details on the conformance statement and also an overview of its relevant tests. To generate it
 click the **Download report** button from the overview section's header.
 
-.. figure:: ../screenshots/conformance_statement_details_overview_nonadmin.PNG
+.. figure:: ../screenshots/conformance_statement_details_overview_header_admin.PNG
   :align: center
 
 Once the button is clicked you will be prompted for the level of detail you want to include in the report. Two options are available regarding 
@@ -194,12 +224,27 @@ and the results from each test step. The test case's title includes its referenc
     a separate page. If your conformance statement contains numerous test cases, each with multiple test steps, the resulting detailed report 
     could be quite long.
 
+.. _manage_your_conformance_statements__view_a_conformance_statements_details__delete:
+
+Delete conformance statement 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Deleting the conformance statement may be desired if you created it by mistake or if your system is no longer expected to conform to the 
+given specification. Deleting the conformance statement is possible through the **Delete statement** button from the overview header.
+
+.. figure:: ../screenshots/conformance_statement_details_overview_header_admin.PNG
+  :align: center
+
+Clicking this will request confirmation and, if confirmed, will remove the conformance statement. Note that your testing history relevant
+to this conformance statement still remains and can be consulted through your test history (see :ref:`view_your_test_history`). In addition,
+if you create the same conformance statement again, your previous tests will be once again counted towards your conformance testing status.
+
 .. _manage_your_conformance_statements__view_system_information:
 
 View selected system's information
 ----------------------------------
 
-Once a system is selected from the list of your organisation's systems (see :ref:`manage_your_systems`) you can manage its conformance statement and view its test history. 
+Once a system is selected from the list of your organisation's systems (see :ref:`manage_your_systems`) you can manage its conformance statements and view its test history. 
 At any given time you can review the information of your selected system by clicking the **System Information** entry from the left side menu.
 
 .. figure:: ../screenshots/conformance_statements_systeminfo.PNG
@@ -208,5 +253,5 @@ At any given time you can review the information of your selected system by clic
 In this screen you can see the **short** and **full name** of the system, its **description** and its **version** number.
 
 .. note::
-    **Editing a system's information:** The information displayed on this screen is read-only. Editing the system's information is reserved 
-    to your administrator.
+    **Editing a system's information:** The information displayed on this screen is read-only. Editing the system's information is possible through the screen 
+    listing your organisation's systems (see :ref:`manage_your_systems__edit`).

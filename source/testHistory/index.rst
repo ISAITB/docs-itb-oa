@@ -12,15 +12,13 @@ select the **TESTS** button from the screen header.
 
 You can then select the system you are interested in from the listing of your organisation's systems (see :ref:`manage_your_systems`).
 
-.. figure:: ../screenshots/systems_nonadmin.PNG
+.. figure:: ../screenshots/systems_admin.PNG
   :align: center
 
-Note that this screen is skipped in case your organisation defines only a single system. The resulting screen, depending on whether the system defines
-one or more conformance statements, may be the conformance statement detail screen (see :ref:`manage_your_conformance_statements__view_a_conformance_statements_details`) 
-or the conformance statement list (see :ref:`manage_your_conformance_statements__view_your_conformance_statements`). Regardless of this, once a system 
-is selected you will be able to click the **Performed Tests** link from the left side menu.
+Selecting a system from the list brings you to its list of conformance statements (see :ref:`manage_your_conformance_statements__view_your_conformance_statements`). 
+From this point you will be able to click the **Performed Tests** link from the left side menu.
 
-.. figure:: ../screenshots/conformance_statements_nonadmin.PNG
+.. figure:: ../screenshots/conformance_statements_admin.PNG
   :align: center
 
 Clicking this link presents you with the test session history screen (see :ref:`view_your_test_history__search`).
