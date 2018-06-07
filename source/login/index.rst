@@ -3,7 +3,7 @@
 Log in
 ======
 
-HELLO BASIC USER
+HELLO ADMIN USER
 
 Before carrying out any action on the test bed you need to log in. The login screen requires you to provide:
 
