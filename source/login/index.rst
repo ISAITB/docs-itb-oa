@@ -3,8 +3,6 @@
 Log in
 ======
 
-HELLO ADMIN USER
-
 Before carrying out any action on the test bed you need to log in. The login screen requires you to provide:
 
 * Your account's **email address**.
@@ -13,9 +11,7 @@ Before carrying out any action on the test bed you need to log in. The login scr
 .. figure:: ../screenshots/login.PNG
   :align: center
 
-ANOTHER CHANGE
-
-Your account credentials are those provided to you by your administrator. Note that the email address  
+Your account credentials are those provided to you by your administrator. Note that the email address
 defined for the account is not necessarily an active address. It is rather a "functional" email address that
 is linked to the test bed. You are not expected to receive emails on this address.
 
