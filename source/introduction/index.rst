@@ -138,7 +138,7 @@ an organisation and its via the organisation that a user can execute tests, insp
 two types of users:
 
 * A **user**, who is able to execute tests and inspect results.
-* An **administrator**, who is also able to execute tests and inspect results, but is also able to manage configuration and the specifications
+* An **administrator**, who is able to execute tests and inspect results, but is also able to manage configuration and the specifications
   to conform to.
 
 .. _introduction__glossary__system:
