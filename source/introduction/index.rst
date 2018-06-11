@@ -219,7 +219,7 @@ Test result
 
 The **test result** is the outcome of a test session and can be one of the following:
 
-* **SUCCESS:** All the steps defined in the test case have completed successfully.
+* **SUCCESS:** All the steps defined in the test case have completed successfully (potentially with certain steps skipped due to conditional logic).
 * **FAILURE:** At least one step defined in the test case has failed.
 * **UNDEFINED:** The test case has either not been executed or was forcibly terminated before completing.
 
