@@ -163,7 +163,7 @@ its details (see :ref:`view_your_test_history__test_steps__details`). The provid
 View test step details
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Clicking on a step's document icon triggers a popup that shows the step's different information elements that can be viewed inline or opened in
+Clicking on a step's document icon triggers a popup that shows the step's different information elements that can be viewed inline, downloaded or opened in
 a separate popup editor. In the case of validation steps, this is extended to also provide the detailed validation results as illustrated in the
 following example for a validation failure.
 
@@ -172,7 +172,7 @@ following example for a validation failure.
   :scale: 50%
 
 In the test step result popup you are presented with the **result** and completion **time** as the step summary. In the sections that follow you 
-can inspect the output information from the step, presented either inline (for short values) or through a further popup editor. In the latter case
+can inspect the output information from the step, presented either inline (for short values), as a file you can download, or through a further popup editor. In the latter case
 this is triggered by clicking the **Open in editor** link. Clicking to open this, displays its content which, in the case of validation steps, 
 is also highlighted for the recorded validation messages.
 
@@ -180,9 +180,16 @@ is also highlighted for the recorded validation messages.
   :align: center
   :scale: 50%
 
-The code popup allows you to copy a specific part of the content or, by means of the **Copy to clipboard** button, copy its entire contents. The
-**Close** button closes this popup and returns you to the test step result display. Note that clicking on a specific error will 
+The editor popup allows you to copy a specific part of the content or, by means of the **Copy to clipboard** button, copy its entire contents. The
+**Close** button closes this popup and returns you to the test step result display. Note that clicking on a specific error will  
 open the validated content and automatically focus on the selected error.
+
+An alternative to viewing the content in this way is to click the **Download as file** link which will download the content as a file. The test bed will determine
+the most appropriate type for the content and name the downloaded file accordingly (if possible).
+
+.. note::
+    **Viewing binary output:** The **Download as file** option is the best way to inspect information that is binary (e.g. an image). The test bed will nonetheless
+    always present the **Open in editor** option but given that the content is then assumed to be text, this will likely not be useful.
 
 .. _view_your_test_history__test_steps__export:
 

@@ -28,8 +28,7 @@ This table presents for the selected system its list of conformance statements i
 of their **domain**, **specification** and **actor**. Simply put this set of information serves to uniquely 
 identify the specification role that your system aims to play, thus determining the test cases that it should
 execute. The presented **results** also provide you an overview of the latest test results, showing you 
-how many configured tests your system has successfully passed up to this point. What remains are tests that
-have failed or that have never been completed.
+how many configured tests your system has successfully passed up to this point and, for the ones not passed, their current status ("undefined" or "failed"). 
 
 From this table you can click any row to proceed to the conformance statement's details (see :ref:`manage_your_conformance_statements__view_a_conformance_statements_details`).
 You can return to the listing of conformance statements at any time by clicking the **Conformance Statement** entry in the left side menu.
@@ -58,7 +57,7 @@ in this page is organised in three sections to present to you:
 Overview
 ~~~~~~~~
 
-The **Conformance Statement Details** section provides you the context of what your system is supposed to conform to.
+The **Conformance statement details** section provides you the context of what your system is supposed to conform to.
 
 .. figure:: ../screenshots/conformance_statement_details_overview_nonadmin.PNG
   :align: center
@@ -66,50 +65,55 @@ The **Conformance Statement Details** section provides you the context of what y
 The **domain** details are presented on the top as the high-level description of the project you are testing for. The 
 **specification** information follows to define the specification you have chosen for your system to conform to
 (a domain may have multiple specifications). The **actor** information defines the specific role your system is expected to fulfil
-as part of this specification (a specification may have multiple actors). At the top of this section you can also click the 
-**Download report** button to export your system's conformance statement report (see :ref:`manage_your_conformance_statements__view_a_conformance_statements_details__export`).
+as part of this specification (a specification may have multiple actors). The **test status** presents an overview of the testing
+progress for the conformance statement's test cases. Below this section you can also click the **Download report** button to export 
+your system's conformance statement report (see :ref:`manage_your_conformance_statements__view_a_conformance_statements_details__export`).
 
 .. _manage_your_conformance_statements__view_a_conformance_statements_details__endpoints:
 
-Endpoints
-~~~~~~~~~
+Configuration parameters
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-The next section displayed is the information on the system's **Endpoints**.
+The next section displayed is the information on the system's **Configuration parameters**, the information that you are expected to provide
+to the test bed for your system. These parameters are typically configured once per system by an administrator. For this purpose they are by 
+default displayed in collapsed form:
+
+.. figure:: ../screenshots/conformance_statement_details_endpoints_collapsed.PNG
+  :align: center
+
+Clicking on the **plus** icon on the right-hand side will expand the panel to display the details for all properties:
 
 .. figure:: ../screenshots/conformance_statement_details_endpoints.PNG
   :align: center
 
-Simply put, this represents the configuration parameters that you are expected to provide
-to the test bed for your system. These parameters are termed **Endpoint parameters** and are grouped under an **Endpoint** which you can 
-consider as a named group of configuration for use in test cases. The table that is presented displays the **name** and **description** of the 
-endpoint and for each endpoint parameter:
+The panel presented includes an **endpoint** name and its **description**. Configuration properties are always grouped under an **endpoint**
+which basically acts as a named set of properties (see the :ref:`introduction__glossary__endpoint` glossary information for details). Configuration
+properties are presented in rows where for each one the following information is presented:
 
-* Its **name**, serving as its identifier.
-* Its **usage**, indicating whether it is optional ("O") or required ("R").
-* Its **type**, which can be "SIMPLE" (i.e. a simple text to enter) or "BINARY" (i.e. a file to upload).
-* Whether or not it already has a **configured** value. 
+* Whether or not it is **set**.
+* Its **parameter name**, serving as its identifier. This is prefixed with an asterisk if the parameter is mandatory.
+* Its **configured value**.
+* Its **description** including helpful text to understand its meaning.
 
-Clicking on a row in this table opens a popup to display additional information on the endpoint parameter.
+In case of parameters that are binary files, these are presented with a link to download them. The following example shows such a parameter,
+along with additional text values.
 
-.. figure:: ../screenshots/conformance_statement_details_endpoint_details_nonadmin.PNG
+.. figure:: ../screenshots/conformance_statement_details_endpoints_multiple_non_admin.PNG
   :align: center
-  :scale: 50%
 
-The information presented additionally here is the parameter's **description** and its **value**.
-
-Finally, note that the complete **Endpoints** section may be missing in case your system is not expected to provide any configuration parameters
+Finally, note that the complete **Configuration parameters** section may be missing in case your system is not expected to provide any information
 before executing its tests.
 
 .. note::
-    **Editing endpoint parameters:** Endpoint parameters apply for the specific system across all its conformance statements. As such, 
-    editing its configuration (i.e. its endpoint parameters) is reserved to your administrator.
+    **Editing configuration parameters:** Configuration parameters apply for the specific system across all its conformance statements. As such, 
+    editing them is reserved to your administrator.
 
 .. _manage_your_conformance_statements__view_a_conformance_statements_details__tests:
 
 Tests
 ~~~~~
 
-At the bottom of the page you can find the **Conformance Tests** section.
+At the bottom of the page you can find the **Conformance tests** section.
 
 .. figure:: ../screenshots/conformance_statement_details_tests_one.PNG
   :align: center
@@ -157,10 +161,7 @@ Export conformance statement report
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The conformance statement report (in PDF format) provides the details on the conformance statement and also an overview of its relevant tests. To generate it
-click the **Download report** button from the overview section's header.
-
-.. figure:: ../screenshots/conformance_statement_details_overview_header_nonadmin.PNG
-  :align: center
+click the **Download report** button from the overview section's panel.
 
 Once the button is clicked you will be prompted for the level of detail you want to include in the report. Two options are available regarding 
 whether or not you want to include each test case's step results in the report.
