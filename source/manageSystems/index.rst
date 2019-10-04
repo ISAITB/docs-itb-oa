@@ -75,9 +75,7 @@ administrator, you will also see a help tooltip to understand their meaning. Suc
 * For secrets a read-only text field indicates whether a value is currently set. Provide a new value by checking
   **Update** which makes the text field editable. While editing you can also toggle the display of typed characters.
 
-Certain properties may actually be non-editable. Such properties can only be managed by your community administrator.
-
-.. note:: 
+.. note::
   Required properties are marked with an asterisk. It is is not mandatory to fill these in when providing the system's
   information but as long as required properties are missing you will not be able to launch tests.
 
