@@ -163,6 +163,9 @@ a new value.
 To change the parameter's value click on **Save**. Clicking on **Delete** will clear the current value, whereas **Cancel** will close the popup without
 making changes.
 
+Certain parameters may also be non editable, even if displayed as required. The management of such parameters is reserved to
+your community administrator.
+
 Finally, note that the complete **Configuration parameters** section may be missing in case your system is not expected to provide any information
 before executing its tests.
 
