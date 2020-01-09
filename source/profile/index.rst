@@ -38,7 +38,7 @@ Case: EU Login
 
 To manage your profile hover over your user's name in the screen's header to see the available options.
 
-.. figure:: ../screenshots/profile_hover_nonadmin_eulogin_oa.PNG
+.. figure:: ../screenshots/profile_hover_nonadmin_eulogin_oa.png
   :align: center
 
 The popup information displays your name, current role, and three links:
@@ -52,7 +52,7 @@ profile information, including your **name**, **email** and **role**. In the sid
 presented links to :ref:`manage your profile<manage_your_profile__edit__eulogin>` (**Profile**, the current page) and
 :ref:`manage your organisation<manage_your_profile__view_organisation_details>` (**Organisation**).
 
-.. figure:: ../screenshots/settings_eulogin_oa.PNG
+.. figure:: ../screenshots/settings_eulogin_oa.png
   :align: center
 
 .. _manage_your_profile__edit__eulogin:
@@ -88,7 +88,7 @@ Case: No EU Login
 
 To manage your profile hover over your user's name in the screen's header to see the available options.
 
-.. figure:: ../screenshots/profile_hover_nonadmin_oa.PNG
+.. figure:: ../screenshots/profile_hover_nonadmin_oa.png
   :align: center
 
 The popup information displays your name, current role, and two links:
