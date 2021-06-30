@@ -250,9 +250,8 @@ In case EU Login is not used the following popup is displayed.
 
 The information requested is:
 
-* The **user's name**.
-* The **email** address that the user will use to login. Recall that this address does not have to be a real one but is rather considered as a functional username.
-  No emails will be sent to this address.
+* The user's **name**.
+* The **username** that the user will use to login.
 * The user's **password**. This is a "one-time password" meaning that the user will need to change it upon his/her first login.
 
 .. _manage_your_profile__remove_member:
