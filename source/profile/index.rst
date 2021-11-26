@@ -174,8 +174,8 @@ the information relevant to your organisation, split in two sections:
 .. figure:: ../screenshots/organisation_manage_nonadmin.PNG
   :align: center
 
-If your community administrator has defined additional properties for its organisations you will also see here a
-**Show properties** checkbox to toggle the display of your organisation's additional information. 
+If your community administrator has defined additional properties for its organisations you will also see here an
+**Additional properties** section that you can click to display of your organisation's additional information. 
 
 .. figure:: ../screenshots/organisation_manage_nonadmin_properties.PNG
   :align: center
