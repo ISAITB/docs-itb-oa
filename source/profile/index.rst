@@ -288,7 +288,7 @@ clipboard.
 The keys listed include the following:
 
 * **Organisation:** The key to identify your organisation. The readonly name of the organisation is displayed alongside the key. You are also presented here
-  with **reset** and **delete** controls to replace or remove the it.
+  with **reset** and **delete** controls to replace or remove the key.
 * **System:** The key to identify a specific system. If your organisation defines multiple systems these are presented in a dropdown list and selecting one
   will display its API key. The displayed key also provides **reset** and **delete** controls to replace or remove it.
 * **Specification:** The target specification does not itself define an API key but you need to select one to view the API keys of its related information
