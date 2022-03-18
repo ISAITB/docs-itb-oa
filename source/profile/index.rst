@@ -168,7 +168,7 @@ To view your organisation's information click the **Organisation** link from the
 the information relevant to your organisation, split in the following sections:
 
 * **Organisation details:** The name (short and full) of your organisation.
-* **Members:** A tab listing your organisation's list of members (i.e. users). This includes yourself as well as any other 
+* **Members:** A tab listing your organisation's members (i.e. users). This includes yourself as well as any other 
   users configured by administrators. For each user the **name**, **username** (or **email** if using EU Login) and **role** are presented.
 * **REST API keys:** A tab, visible if :ref:`testing via REST API<execute_tests_rest>` is enabled by your administrator, allowing you to view and manage the
   keys you need to use it.
@@ -217,7 +217,7 @@ clipboard. The keys listed include the following:
 The organisation and system API keys are managed by your organisation's administrator and may be missing if they have never been initialised. On the other hand, the keys relevant 
 to specifications, actors, test suites and test cases will always be available.
 
-For details on how these REST API keys are used to launch and manage test sessions are provided in :ref:`execute_tests_rest`.
+Details on how these REST API keys are used to launch and manage test sessions are provided in :ref:`execute_tests_rest`.
 
 .. note::
 
