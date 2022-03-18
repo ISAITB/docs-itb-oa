@@ -215,6 +215,61 @@ Certain properties may actually be non-editable. Such properties can only be man
 
 Update any of the existing values and click on **Save changes** to persist your changes.
 
+.. _manage_your_profile__add_member:
+
+Add a member to your organisation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As organisation administrator you can also add new non-administrator users to your organisation (see :ref:`introduction__glossary__organisation`).
+These users can start test sessions and view your organisation's testing history but cannot add other users or change
+your organisation's configuration.
+
+Adding a new member is done by clicking on the **Add member** button and completing the information in the displayed popup. The
+information you need to provide depends on whether your test bed uses EU Login for its authentication.
+
+Case: EU Login
+++++++++++++++
+
+In case EU Login is used the following popup is displayed.
+
+.. figure:: ../screenshots/organisation_manage_add_member_eulogin.PNG
+  :align: center
+  :scale: 50%
+
+You are required to provide the **email** address of the user. This address needs to be the one that the user has linked to
+her EU Login account. Once you have created the user you will see that a new entry is added to your organisation's
+members but for which there is no displayed name and the displayed status is **Inactive**. The name and status will be
+updated once this user has :ref:`confirmed this role assignment<login__roles__confirm>`.
+
+Case: no EU Login
++++++++++++++++++
+
+In case EU Login is not used the following popup is displayed.
+
+.. figure:: ../screenshots/organisation_manage_add_member.PNG
+  :align: center
+  :scale: 50%
+
+The information requested is:
+
+* The user's **name**.
+* The **username** that the user will use to login.
+* The user's **password**. This is a "one-time password" meaning that the user will need to change it upon his/her first login.
+
+.. _manage_your_profile__remove_member:
+
+Remove a member from your organisation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Removing an organisation member is possible through the **Members** table.
+
+.. figure:: ../screenshots/organisation_manage_members.PNG
+  :align: center
+  :scale: 50%
+
+Each displayed row except the one corresponding to yourself, displays a delete button under the **Operation** column.
+To delete a given member click this button and confirm the subsequent prompt.
+
 .. _manage_your_profile__view_organisation_details__rest:
 
 Manage your organisation's REST API keys
