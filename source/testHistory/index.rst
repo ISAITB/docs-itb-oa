@@ -203,6 +203,11 @@ Above the diagram display you are presented with additional buttons linked to th
 * **View system** takes you to view the :ref:`details of the system<manage_your_conformance_statements__view_system_information>` this test session relates to.
 * **View conformance statement** takes you to the :ref:`conformance statement<manage_your_conformance_statements__view_a_conformance_statements_details>` for which this session was executed.
 
+In the case of an active test session you are also provided with a button to **refresh** its display. This allows you to track the progress of a
+specific test session without needing to make a full refresh of the displayed results. Clicking this button will refresh only the relevant
+test session and reflect changes on its diagram. Note that it is possible that upon refresh, the test session has in the meanwhile completed,
+in which case a relevant information popup will inform you accordingly.
+
 Clicking on the session row will once again collapse the display. Note that once one or more session
 details are expanded the table's header will display a **Collapse all** button that can be clicked to collapse all details.
 
