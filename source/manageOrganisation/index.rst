@@ -7,7 +7,8 @@ To view your organisation's information click the **My organisation** link from 
 are presented with shows you the information relevant to your organisation, split in the following sections:
 
 * **Organisation details:** The name (short and full) of your organisation.
-* **Systems**: A tab listing the systems defined for your organisation.
+* **Systems**: A tab listing the systems defined for your organisation. Each listed system displays its **name** (short and full),
+  **description** and **version**.
 * **Users:** A tab listing your organisation's users. This includes yourself as well as any other configured users.
   For each user the **name**, **username** (or **email** if using EU Login), **role** and **status** are presented are presented.
 * **REST API keys:** A tab, visible if :ref:`testing via REST API<execute_tests_rest>` is enabled by your administrator, allowing you to view and manage the
@@ -95,8 +96,8 @@ Doing so you will be presented with a screen to provide the new system's informa
 * An optional **description** to provide more information about the system.
 * A **version** number. Although requested this is not currently used in the test bed apart from display purposes.
 
-If your organisation includes other systems you are also presented here with an option to **copy the test setup** from 
-one of them as a source. Selecting one will replicate the selected system's conformance statements for the new system. 
+If your organisation includes other systems you are also presented here with an option to **copy the test setup** from
+one of them as a source. Selecting one will replicate the selected system's conformance statements for the new system.
 
 .. figure:: ../screenshots/systems_create_copy.PNG
   :align: center
@@ -119,7 +120,7 @@ Configured properties can be simple texts, secret values (e.g. passwords) or fil
 administrator, you will also see a help tooltip to understand their meaning. Such properties can be edited as follows:
 
 * For texts through an editable text field or by selecting a preset value from a dropdown list.
-* For files using the **Upload** button. Once one is selected you can download it by clicking on its link, or delete it by 
+* For files using the **Upload** button. Once one is selected you can download it by clicking on its link, or delete it by
   clicking **Remove**.
 * For secrets a read-only text field indicates whether a value is currently set. Provide a new value by checking
   **Update** which makes the text field editable. While editing you can also toggle the display of typed characters.
@@ -136,7 +137,7 @@ to return to the previous screen without making any changes.
 Edit an existing system
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-To edit an existing system click its row from the listing of existing systems. Doing so results in a screen 
+To edit an existing system click its row from the listing of existing systems. Doing so results in a screen
 displaying the system's information, presented in editable input fields.
 
 .. figure:: ../screenshots/systems_update.PNG
@@ -144,7 +145,7 @@ displaying the system's information, presented in editable input fields.
   :scale: 50%
 
 You can proceed here to modify the **short name**, **full name**, **description** and **version** of the system. If your organisation defines
-other systems you can also select to **copy the test setup** from another system which will reset the system's conformance statements to 
+other systems you can also select to **copy the test setup** from another system which will reset the system's conformance statements to
 match the selected one (upon confirmation).
 
 .. figure:: ../screenshots/systems_create_copy.PNG
@@ -157,7 +158,7 @@ Once another system is selected to copy from, you are also presented with additi
 * **Conformance statement configurations:** To also copy any of the source system's configuration parameters set on its
   conformance statements.
 
-If your community foresees additional system properties, and as long as you are not copying the properties from another system, you 
+If your community foresees additional system properties, and as long as you are not copying the properties from another system, you
 will also see an **Additional properties** section. You can click this to expand and manage the system's properties.
 
 .. figure:: ../screenshots/systems_update_properties.PNG
@@ -170,12 +171,12 @@ administrator, you will also see a help tooltip to understand their meaning. Suc
 * For texts the current value is presented in an editable text field or dropdown menu (if the property has preset values).
 * For files the **Upload** button is used to select a new file, whereas if one is already set you can download it
   by clicking on its link, or delete it by clicking **Remove**.
-* For secrets a read-only text field indicates whether a value is currently set, whereas to provide a new value you 
+* For secrets a read-only text field indicates whether a value is currently set, whereas to provide a new value you
   check **Update**. When providing a new value you can also toggle the display of the typed characters.
 
 Certain properties may actually be non-editable. Such properties can only be managed by your community administrator.
 
-.. note:: 
+.. note::
   Required properties are marked with an asterisk. It is is not mandatory to fill these in when providing the system's
   information but as long as required properties are missing you will not be able to launch tests.
 
@@ -202,7 +203,7 @@ users defined by administrators.
 
 Each user is displayed in a row presenting her **name**, **email** and **role**. Your entry in the table is
 highlighted with a "(You)" displayed at the end of your name. From here you can click on the **Create user** button
-to :ref:`create a new user <manage_organisation__users_create>`, or click on an existing user's row to 
+to :ref:`create a new user <manage_organisation__users_create>`, or click on an existing user's row to
 :ref:`edit the user <manage_organisation__users_edit>`.
 
 .. _manage_organisation__users_create:
@@ -210,8 +211,8 @@ to :ref:`create a new user <manage_organisation__users_create>`, or click on an 
 Create a new user
 ~~~~~~~~~~~~~~~~~
 
-As organisation administrator you can add new users to your organisation. Adding a new user is done by clicking on 
-the **Create user** button presented above the listing of existing users. 
+As organisation administrator you can add new users to your organisation. Adding a new user is done by clicking on
+the **Create user** button presented above the listing of existing users.
 
 .. figure:: ../screenshots/organisation_manage_create_user_button.png
   :align: center
@@ -228,14 +229,14 @@ In case EU Login is used the following screen is displayed.
   :align: center
   :scale: 50%
 
-You are required to provide the **email** address and **role** of the user. The email address needs to be the one that the user has 
-linked to her EU Login account. The role can either be "Administrator" or "User". Recall that the "User" role can execute and follow 
+You are required to provide the **email** address and **role** of the user. The email address needs to be the one that the user has
+linked to her EU Login account. The role can either be "Administrator" or "User". Recall that the "User" role can execute and follow
 up on tests, whereas the "Administrator" role can additionally manage the organisation's configuration (e.g. properties, systems and
 conformance statements) and add other users.
 
 Once you have created the user you will see that a new entry is added to the list of users
 but for which there is no displayed name and the displayed status is **Inactive**. The name and status will be
-updated once this user has :ref:`confirmed this role assignment<login__roles__confirm>`. To finish creating the user click **Save**, 
+updated once this user has :ref:`confirmed this role assignment<login__roles__confirm>`. To finish creating the user click **Save**,
 otherwise click **Cancel** to return to the previous screen.
 
 Case: no EU Login
@@ -274,7 +275,7 @@ Editing a user's details displays her information as read-only.
   :align: center
 
 The information presented here is the user's **name**, **email**, **role**, and **status**. From here you can change
-the user's role and click on **Update** to save your change. Alternatively you can delete, upon confirmation, the user by clicking 
+the user's role and click on **Update** to save your change. Alternatively you can delete, upon confirmation, the user by clicking
 on **Delete** or click **Back** to cancel and return to the previous screen.
 
 Case: no EU Login
@@ -286,8 +287,8 @@ Editing a user's details displays presents her information in the following scre
   :align: center
 
 The information displayed is the user's **name**, **username**, **role**, and **status**, of which only the **name** and **role** can
-be edited. You may also check the **Set one-time password** option to provide a new password for your user (to be changed on his/her next login). Clicking 
-on **Update** saves your changes whereas clicking on **Back** discards them and returns you to the previous screen. The **Delete** 
+be edited. You may also check the **Set one-time password** option to provide a new password for your user (to be changed on his/her next login). Clicking
+on **Update** saves your changes whereas clicking on **Back** discards them and returns you to the previous screen. The **Delete**
 button will, following confirmation, delete the current user.
 
 .. note::
