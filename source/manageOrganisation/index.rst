@@ -7,7 +7,8 @@ To view your organisation's information click the **My organisation** link from 
 are presented with shows you the information relevant to your organisation, split in the following sections:
 
 * **Organisation details:** The name (short and full) of your organisation.
-* **Systems**: A tab listing the systems defined for your organisation.
+* **Systems**: A tab listing the systems defined for your organisation. Each listed system displays its **name** (short and full),
+  **description** and **version**.
 * **Users:** A tab listing your organisation's users. This includes yourself as well as any other 
   users configured by administrators. For each user the **name**, **username** (or **email** if using EU Login) and **role** are presented.
 * **REST API keys:** A tab, visible if :ref:`testing via REST API<execute_tests_rest>` is enabled by your administrator, allowing you to view and manage the
