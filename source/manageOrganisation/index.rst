@@ -30,8 +30,7 @@ administrator, will display a help tooltip to understand their meaning.
 As an administrator you can view and edit these properties, depending on their type:
 
 * For texts the current value is presented in an editable text field.
-* For files the **Upload** button is used to select a new file, whereas if one is already set you can download it
-  by clicking on its link, or delete it by clicking **Remove**.
+* For files you can **upload** a new file, whereas if one is already set you can **download** or **delete** it.
 * For secrets a read-only text field indicates whether a value is currently set, whereas to provide a new value you
   check **Update**. When providing a new value you can also toggle the display of the typed characters.
 
@@ -112,8 +111,7 @@ Configured properties can be simple texts, secret values (e.g. passwords) or fil
 administrator, you will also see a help tooltip to understand their meaning. Such properties can be edited as follows:
 
 * For texts through an editable text field or by selecting a preset value from a dropdown list.
-* For files using the **Upload** button. Once one is selected you can download it by clicking on its link, or delete it by
-  clicking **Remove**.
+* For files you can **upload** a new file, whereas if one is already set you can **download** or **delete** it.
 * For secrets a read-only text field indicates whether a value is currently set. Provide a new value by checking
   **Update** which makes the text field editable. While editing you can also toggle the display of typed characters.
 
@@ -159,8 +157,7 @@ Configured properties can be simple texts, secret values (e.g. passwords) or fil
 administrator, you will also see a help tooltip to understand their meaning. Such properties can be managed as follows:
 
 * For texts the current value is presented in an editable text field or dropdown menu (if the property has preset values).
-* For files the **Upload** button is used to select a new file, whereas if one is already set you can download it
-  by clicking on its link, or delete it by clicking **Remove**.
+* For files you can **upload** a new file, whereas if one is already set you can **download** or **delete** it.
 * For secrets a read-only text field indicates whether a value is currently set, whereas to provide a new value you
   check **Update**. When providing a new value you can also toggle the display of the typed characters.
 
@@ -248,7 +245,7 @@ The information requested for the new user are as follows:
 * The **username** (required), used by the user to login.
 * The user's **role** (required), either "Administrator" or "User". Recall that the "User" role can execute and follow up on tests, whereas the "Administrator"
   role can additionally manage the organisation's test configuration (e.g. systems and conformance statements) and add other users.
-* The user's **password** and the password **confirmation**. The entered password is considered a "one-time" password that the user will need to change upon his/her next login.
+* The user's **password**. The entered password is considered a "one-time" password that the user will need to change upon his/her next login.
 
 To complete the creation of the user click the **Save** button. Clicking on **Cancel** will discard pending changes and return to the previous screen.
 
