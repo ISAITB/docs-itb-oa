@@ -310,7 +310,7 @@ The keys listed include the following:
   with **reset** and **delete** controls to replace or remove the key.
 * **Conformance snapshot:** The conformance snapshots that include the organisation. Select one to view its key and update the other values.
 * **System:** The key to identify a specific system. If your organisation defines multiple systems these are presented in a dropdown list and selecting one
-  will display its API key. The displayed key also provides **reset** and **delete** controls to replace or remove it.
+  will display its API key. The displayed key also provides a **reset** control to replace it.
 * **Specification:** The target specification does not itself define an API key but you need to select one to view the API keys of its related information
   (actors, test suites and test cases). If you have conformance statements for only a single specification this appears as preselected and readonly.
 * **Actor:** The key to identify the target specification's actor. The actor, along with your selected system essentially constitute your target
