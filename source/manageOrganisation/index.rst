@@ -133,9 +133,13 @@ displaying the system's information, presented in editable input fields.
 .. figure:: ../screenshots/systems_update.PNG
   :align: center
 
-You can proceed here to modify the **short name**, **full name**, **description** and **version** of the system. If your organisation defines
-other systems you can also select to **copy the test setup** from another system which will reset the system's conformance statements to
-match the selected one (upon confirmation).
+You can proceed here to modify the **short name**, **full name**, **description**, **version**.  At the bottom you
+also see the unique **API key** for the system that can be clicked to copy it to the clipboard or refreshed to update it.
+This API key can be used in case the test bed's :ref:`REST API <api>` is enabled, or for
+`messaging in test cases <https://www.itb.ec.europa.eu/docs/tdl/latest/handlers/index.html#built-in-messaging-handlers>`_.
+
+If your organisation defines other systems you can also select to **copy the test setup** from another system which will
+reset the system's conformance statements to match the selected one (upon confirmation).
 
 .. figure:: ../screenshots/systems_create_copy.PNG
   :align: center
@@ -304,6 +308,7 @@ The keys listed include the following:
 
 * **Organisation:** The key to identify your organisation. The readonly name of the organisation is displayed alongside the key. You are also presented here
   with **reset** and **delete** controls to replace or remove the key.
+* **Conformance snapshot:** The conformance snapshots that include the organisation. Select one to view its key and update the other values.
 * **System:** The key to identify a specific system. If your organisation defines multiple systems these are presented in a dropdown list and selecting one
   will display its API key. The displayed key also provides **reset** and **delete** controls to replace or remove it.
 * **Specification:** The target specification does not itself define an API key but you need to select one to view the API keys of its related information
