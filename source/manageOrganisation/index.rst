@@ -53,7 +53,9 @@ Your organisation's systems are presented in a table that displays for each syst
 * A **version** number.
 
 To view the details of a specific system you can click its row in the table. Doing so will present you with its detail page
-where you can see the **short** and **full name** of the system, its **description** and its **version** number.
+where you can see the **short** and **full name** of the system, its **description** and its **version** number. At the you
+also see the unique **API key** for the system that can be clicked to copy it to the clipboard. This API key can be used in
+case the test bed's :ref:`REST API <api>` is enabled, or for `messaging in test cases <https://www.itb.ec.europa.eu/docs/tdl/latest/handlers/index.html#built-in-messaging-handlers>`_.
 
 .. figure:: ../screenshots/system_details.png
   :align: center
@@ -108,6 +110,7 @@ clipboard.
 The keys listed include the following:
 
 * **Organisation:** The key to identify your organisation. The readonly name of the organisation is displayed alongside the key.
+* **Conformance snapshot:** The conformance snapshots that include the organisation. Select one to view its key and updated the other values.
 * **System:** The key to identify a specific system. If your organisation defines multiple systems these are presented in a dropdown list and selecting one
   will display its API key.
 * **Specification:** The target specification does not itself define an API key but you need to select one to view the API keys of its related information
