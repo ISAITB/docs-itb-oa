@@ -411,9 +411,11 @@ specific conformance statement that you are expected to provide, as well as your
   :align: center
 
 Configuration properties are displayed in panels grouping together **organisation properties**, **system properties** and **statement properties**.
-For each property you see its name, value and a tooltip with a description. Properties that are
-required to be completed before executing tests are marked with an asterisk. How you view and edit the value of each property
-depends on its type, and can be either a test field, password field or file upload control.
+For each property you see its name, value and a tooltip with a description, including an asterisk if a value is required before executing tests.
+
+How you view and edit the value of each property depends on its type, and can be either a text field, password field or file upload control.
+To update the properties' values make the desired changes and click on **Update configuration**. Doing so will save the latest values and
+validate once again whether you can proceed with executing tests.
 
 Certain parameters may also be non editable, even if displayed as required. The management of such parameters is reserved to
 your community administrator.
