@@ -64,7 +64,7 @@ Looking for the user guide of another Interoperability Test Bed role? Follow the
 
 .. |guide1| raw:: html
 
-   <a href="https://www.itb.ec.europa.eu/docs/itb-oa/latest/" target="_blank"><img src="https://www.itb.ec.europa.eu/files/docs-static/images/itb_guide_oa.png" rel="noopener noreferrer" alt="User guide (Organisation administrator)"/></a>
+   <a href="https://www.itb.ec.europa.eu/docs/itb-ou/latest/" target="_blank"><img src="https://www.itb.ec.europa.eu/files/docs-static/images/itb_guide_ou.png" rel="noopener noreferrer" alt="User guide (Organisation user)"/></a>
 
 .. |guide2| raw:: html
 
@@ -78,7 +78,7 @@ Looking for the user guide of another Interoperability Test Bed role? Follow the
     :class: image-caption-table
 
     |guide1| ~ |guide2| ~ |guide3|
-    User guide for organisation administrators covering the management and configuration of a specific organisation. ~ User guide for the community administrator covering the management and configuration of a complete community. ~ User guide for the Test Bed administrator covering the management and configuration of the entire Test Bed.
+    User guide for organisation users covering test execution and reporting in the context of a specific organisation. ~ User guide for the community administrator covering the management and configuration of a complete community. ~ User guide for the Test Bed administrator covering the management and configuration of the entire Test Bed.
 
 Related documentation
 ---------------------
