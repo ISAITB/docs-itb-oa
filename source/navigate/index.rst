@@ -98,6 +98,7 @@ The following menu items are available to you:
     :delim: |
 
     **Home** | Takes you back to your :ref:`landing page <navigate__landing_page>`.
+    **Community test sessions** | Takes you to view the :ref:`community test history <communityTests>`.
     **My conformance statements** | Takes you to your organisation's :ref:`conformance statement overview <manage_your_conformance_statements>`.
     **My test sessions** | Takes you to your organisation's :ref:`test history <view_your_test_history>`.
     **My organisation** | Takes you to view your :ref:`organisation's information <manage_organisation>`.
@@ -106,7 +107,8 @@ The following menu items are available to you:
 
 .. note::
 
-  Depending on your community's configuration you may see a different term for the **My organisation** menu.
+  Depending on your community's configuration you may see a different term for the **My organisation** entry. In addition, the
+  **Community test sessions** entry may not be available.
 
 .. _navigate__breadcrumbs:
 
