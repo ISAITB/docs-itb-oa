@@ -69,9 +69,11 @@ Looking for the user guide of another Interoperability Test Bed role? Follow the
 .. |guide2| raw:: html
 
    <a href="https://www.itb.ec.europa.eu/docs/itb-ca/latest/" target="_blank"><img src="https://www.itb.ec.europa.eu/files/docs-static/images/itb_guide_ca.png" rel="noopener noreferrer" alt="User guide (Community administrator)"/></a>
+   
 .. |guide3| raw:: html
 
    <a href="https://www.itb.ec.europa.eu/docs/itb-ta/latest/" target="_blank"><img src="https://www.itb.ec.europa.eu/files/docs-static/images/itb_guide_ta.png" rel="noopener noreferrer" alt="User guide (Test Bed administrator)"/></a>
+
 .. csv-table::
     :widths: 33,33,33
     :delim: ~
