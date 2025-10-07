@@ -228,7 +228,7 @@ the **Create user** button presented above the listing of existing users.
 Doing so will present a screen to input the new user's information, the content of which depends on whether or not your Test Bed
 uses an external identity provider for its authentication.
 
-Case: using an identity provider
+Case: Using an identity provider
 ++++++++++++++++++++++++++++++++
 
 In case an identity provider such as EU Login is used, the following screen is displayed.
@@ -246,7 +246,7 @@ but for which there is no displayed name and the displayed status is **Inactive*
 updated once this user has :ref:`confirmed this role assignment<login__roles__confirm>`. To finish creating the user click **Save**,
 otherwise click **Cancel** to return to the previous screen.
 
-Case: no identity provider
+Case: No identity provider
 ++++++++++++++++++++++++++
 
 In case an external identity provider is not used, the following screen is displayed.
@@ -272,7 +272,7 @@ Edit an existing user
 To edit an existing user of your organisation click on her corresponding row from the listing of existing users. The screen you see following
 this depends on whether or not your Test Bed uses an external identity provider for its authentication.
 
-Case: using an identity provider
+Case: Using an identity provider
 ++++++++++++++++++++++++++++++++
 
 Editing a user's details opens a screen to display her current information.
@@ -284,7 +284,7 @@ The information presented here is the user's **name**, **email**, **role**, and 
 the user's role and click on **Update** to save your change. Alternatively you can delete, upon confirmation, the user by clicking
 on **Delete** or click **Back** to cancel and return to the previous screen.
 
-Case: no identity provider
+Case: No identity provider
 ++++++++++++++++++++++++++
 
 Editing a user's details displays presents her information in the following screen.
