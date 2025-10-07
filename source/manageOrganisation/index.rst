@@ -10,11 +10,18 @@ are presented with shows you the information relevant to your organisation, spli
 * **Systems**: A tab listing the systems defined for your organisation. Each listed system displays its **name** (short and full),
   **description** and **version**.
 * **Users:** A tab listing your organisation's users. This includes yourself as well as any other configured users.
-  For each user the **name**, **username** (or **email** if using EU Login), **role** and **status** are presented.
+  For each user the **name**, **username** (or **email** if using an external provider) and **role** are presented.
 * **REST API keys:** A tab, visible if :ref:`testing via REST API<execute_tests_rest>` is enabled by your administrator, allowing you to view and manage the
   keys you need to use it.
 
 .. figure:: ../screenshots/organisation_manage_admin.PNG
+  :align: center
+
+In case your community supports self-registration for existing organisations, the information listed under the organisation
+will also include a **self-registration token**. This value can be copied from here and communicated to other users to
+use when :ref:`self-registering <login__create_account>` to join the organisation.
+
+.. figure:: ../screenshots/organisation_manage_nonadmin_token.png
   :align: center
 
 If your community administrator has defined additional properties for its organisations you will also see here an
