@@ -197,6 +197,9 @@ without making any changes.
 Manage your users
 -----------------
 
+.. note::
+  **Missing users tab:** If the users tab is not displayed this means that user management is disabled by the community administrator.
+
 Selecting the **Users** tab presents your organisation's users. This includes yourself as well as any other
 users defined by administrators.
 
